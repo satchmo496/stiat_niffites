@@ -1,0 +1,69 @@
+define(['pipAPI', 'https://cdn.jsdelivr.net/gh/baranan/minno-tasks@0.*/stiat/qualtrics/qstiat6.js'], function(APIConstructor, stiatExtension){
+
+	var API = new APIConstructor();
+		  return stiatExtension({
+		  category : { 
+		    name : 'Niffites', //Will appear in the data.
+		    title : {
+		      media : {word : 'Niffites'}, //Name of the category presented in the task.
+		      css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+		      height : 7 //Used to position the "Or" in the combined block.
+		    }, 
+		    media : [ //Stimuli content as PIP's media objects
+    		   	{word : 'Cellanif'}, 
+        		{word : 'Eskannif'}, 
+        		{word : 'Lebbunif'},
+			      {word : 'Zallunif'}
+		    ], 
+		    //Stimulus css (style)
+		    css : {color:'#31b404','font-size':'3em'}
+		  },	
+
+  		attribute1 : 
+			{
+			name : 'I Dislike', //Attribute label
+			title : {
+				media : {word : 'I Dislike'}, //Name of the category presented in the task.
+				css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+				height : 7 //Used to position the "Or" in the combined block.
+			}, 
+			media : [ //Stimuli
+				{word: 'Abuse'},
+				{word: 'Failure'},
+				{word: 'Evil'},
+				{word: 'Humiliation'},
+				{word: 'Pain'},
+				{word: 'Poison'},
+				{word: 'Sadness'},
+        {word: 'Disaster'}
+			], 
+			//Can change color and size of the targets here.
+			css : {color:'#31b404','font-size':'3em'}
+			},
+		attribute2 : 
+			{
+			name : 'I Like', //Attribute label
+			title : {
+				media : {word : 'I Like'}, //Name of the category presented in the task.
+				css : {color:'#31b404','font-size':'2em'}, //Style of the category title.
+				height : 7 //Used to position the "Or" in the combined block.
+			}, 
+			media : [ //Stimuli
+				{word: 'Beauty'},
+				{word: 'Cheer'},
+				{word: 'Friendship'},
+				{word: 'Happiness'},
+				{word: 'Laughter'},
+				{word: 'Love'},
+				{word: 'Pleasure'},
+				{word: 'Joy'}
+			], 
+			//Can change color and size of the targets here.
+			css : {color:'#31b404','font-size':'3em'}
+			},
+
+  base_url : {//Where are your images at?
+    image : 'https://satchmo496.github.io/images/'
+  }}
+  );
+  });
